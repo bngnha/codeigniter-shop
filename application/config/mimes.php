@@ -93,12 +93,12 @@ $mimes = array(	'hqx'	=>	'application/mac-binhex40',
 				'avi'	=>	'video/x-msvideo',
 				'movie'	=>	'video/x-sgi-movie',
 				'doc'	=>	'application/msword',
-				'docx'	=>	'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
-				'xlsx'	=>	'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+				'docx'	=>	array('application/vnd.openxmlformats-officedocument.wordprocessingml.document', 'application/zip'),
+				'xlsx'	=>	array('application/vnd.openxmlformats-officedocument.spreadsheetml.sheet', 'application/zip'),
 				'word'	=>	array('application/msword', 'application/octet-stream'),
 				'xl'	=>	'application/excel',
 				'eml'	=>	'message/rfc822',
-				'json'  => array('application/json', 'text/json')
+				'json' => array('application/json', 'text/json')
 			);
 
 
