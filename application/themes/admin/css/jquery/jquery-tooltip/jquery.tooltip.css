@@ -1,0 +1,83 @@
+/*
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	opacity: 0.85;
+}
+#tooltip h3, #tooltip div { margin: 0; }
+*/
+
+#tooltip {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 0.5em 0.5em 0.5em 0.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: absolute;
+    z-index: 3000;
+}
+#tooltip.tooltip_content .title {
+    color: #E97D13;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+#tooltip.tooltip_content .content, #tooltip.tooltip_content .content * {
+    line-height: 150%;
+}
+#tooltip.tooltip_picture .name {
+    color: #E97D13;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+#tooltip.tooltip_picture .price_product {
+    margin-bottom: 5px;
+}
+#tooltip.tooltip_picture .picture {
+    text-align: center;
+}
+#tooltip.tooltip_product .margin {
+    margin-bottom: 5px;
+}
+#tooltip.tooltip_product .city b {
+    color: #003399;
+    font-weight: normal;
+}
+#tooltip.tooltip_product .city .suggest {
+    color: #FF0000;
+    font-family: Tahoma;
+}
+#tooltip.tooltip_product .quality b {
+    color: #003399;
+}
+#tooltip.tooltip_product .company {
+    color: #003399;
+    margin-bottom: 5px;
+}
+#tooltip.tooltip_product .estore {
+    color: #003399;
+}
+#tooltip.tooltip_product .teaser {
+    font-size: 11px;
+}
+#tooltip.tooltip_review .picture, #tooltip.tooltip_product .picture, #tooltip.tooltip_product .picture_only {
+    text-align: center;
+}
+#tooltip.tooltip_review .name, #tooltip.tooltip_product .name {
+    color: #E97D13;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#tooltip.tooltip_review .picture, #tooltip.tooltip_product .picture {
+    margin-bottom: 10px;
+}
+#tooltip.tooltip_review .price_product, #tooltip.tooltip_product .price_product {
+    margin-bottom: 3px;
+}
