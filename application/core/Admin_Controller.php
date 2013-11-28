@@ -88,8 +88,8 @@ class Admin_Controller extends MX_Controller
         $this->data['logo_img'] = base_url() . 'uploads/' . $this->session->userdata('config_logo');
         
         // Load menu
-        $this->load->helper('menu_page');
-		load_header_menu($this->data);
+        //$this->load->helper('menu_page');
+		//load_header_menu($this->data);
         
         // Load footer
         $this->data['shop_name'] = $this->session->userdata('config_name');
