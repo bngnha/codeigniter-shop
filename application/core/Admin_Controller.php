@@ -49,23 +49,23 @@ class Admin_Controller extends MX_Controller
 		$this->load->model('user/user_model');
 		*/
 
-		
+
 		// Load language
 		//Get language that was set in db
 		$lang_cd = 'en';
 		$lang_name = 'english';
 
 		$this->load->model('setting/setting_model');
-		$row = $this->setting_model->getSetting('config', 'config_language');
+		$row = $this->setting_model->getSetting('config', 'config_admin_language');
 		if (isset($row))
 		{
-			$lang_cd = $row['config_language'];
+			$lang_cd = isset($row['config_admin_language']) ? $row['config_admin_language'] : 'en';
 			if ($lang_cd === 'vi')
 			{
 				$lang_name = 'vietnamese';
 			}
 		}
-		$this->session->set_userdata('config_language', $lang_cd);
+		$this->session->set_userdata('config_admin_language', $lang_cd);
 		
          // Get language id from language table and set to session
         $where = array();
@@ -81,21 +81,20 @@ class Admin_Controller extends MX_Controller
         }
         
         // Load config
-        $this->load->helper('setting');
-        get_setting_to_session();
+        //$this->load->helper('setting');
+        //get_setting_to_session();
 
         // Load information for header
         $this->data['logo_img'] = base_url() . 'uploads/' . $this->session->userdata('config_logo');
         
         // Load menu
         $this->load->helper('menu_page');
-        menu_page($this->data);
+		load_header_menu($this->data);
         
         // Load footer
         $this->data['shop_name'] = $this->session->userdata('config_name');
         $this->data['shop_address'] = $this->session->userdata('config_address');
         $this->data['shop_telephone'] = $this->session->userdata('config_telephone');
         $this->data['shop_email'] = $this->session->userdata('config_email');
-        
     }
 }

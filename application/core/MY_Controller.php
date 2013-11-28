@@ -37,7 +37,7 @@ class MY_Controller extends MX_Controller
 		$row = $CI->setting_model->getSetting('config', 'config_language');
 		if (isset($row))
 		{
-			$lang_cd = $row['config_language'];
+			$lang_cd = isset($row['config_language']) ? $row['config_language'] : 'en';
 			if ($lang_cd === 'vi')
 			{
 				$lang_name = 'vietnamese';
@@ -74,6 +74,5 @@ class MY_Controller extends MX_Controller
         $this->data['shop_address'] = $this->session->userdata('config_address');
         $this->data['shop_telephone'] = $this->session->userdata('config_telephone');
         $this->data['shop_email'] = $this->session->userdata('config_email');
-        
     }
 }

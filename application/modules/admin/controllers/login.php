@@ -15,7 +15,7 @@ class Login extends Admin_Controller
 		$row = $this->setting_model->getSetting('config', 'config_admin_language');
 		if (isset($row))
 		{
-			$lang_cd = $row['config_admin_language'];
+			$lang_cd = isset($row['config_admin_language']) ? $row['config_admin_language'] : 'en';
 			if ($lang_cd === 'vi')
 			{
 				$lang_name = 'vietnamese';
