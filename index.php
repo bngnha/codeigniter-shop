@@ -195,8 +195,8 @@ if (defined('ENVIRONMENT'))
 define('HTTP_SERVER', 'http://localhost/codeigniter/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://localhost/codeigniter/');
-define('HTTPS_IMAGE', 'https://localhost/codeigniter/images/');
+define('HTTPS_SERVER', 'https://localhost/codeigniter-shop/');
+define('HTTPS_IMAGE', 'https://localhost/codeigniter-shop/images/');
 
 define('ADMIN_HTTP_RESOURCE', HTTP_SERVER.'application/modules/admin/views/');
 define('CATALOG_HTTP_RESOURCE', HTTP_SERVER.'application/modules/pages/views/');

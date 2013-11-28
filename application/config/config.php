@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/codeigniter/';
+$config['base_url']	= 'http://localhost/codeigniter-shop/';
 
 $config['modules_locations'] = array(APPPATH.'modules/' => '../modules/',);
 /*

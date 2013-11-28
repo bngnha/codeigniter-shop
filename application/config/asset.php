@@ -198,6 +198,6 @@ $config['asset_symlinks'] = array();
  * 
  * Enter description here ...
  */
-$config['asset_url']		= 'http://localhost/codeigniter/';
+$config['asset_url']		= 'http://localhost/codeigniter-shop/';
 
 /* End of file config/asset.php */
