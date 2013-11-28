@@ -192,11 +192,11 @@ if (defined('ENVIRONMENT'))
 	}
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost/shop-online/');
+define('HTTP_SERVER', 'http://localhost/codeigniter/');
 
 // HTTPS
-define('HTTPS_SERVER', 'https://localhost/shop-online/');
-define('HTTPS_IMAGE', 'https://localhost/shop-online/images/');
+define('HTTPS_SERVER', 'https://localhost/codeigniter/');
+define('HTTPS_IMAGE', 'https://localhost/codeigniter/images/');
 
 define('ADMIN_HTTP_RESOURCE', HTTP_SERVER.'application/modules/admin/views/');
 define('CATALOG_HTTP_RESOURCE', HTTP_SERVER.'application/modules/pages/views/');
